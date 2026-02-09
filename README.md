@@ -2,7 +2,7 @@
 
 A premium, high-fidelity interior design portfolio featuring contemporary aesthetics, sticky parallax stacking effects, and smooth animations. This project is a showcase of professional UI/UX design, advanced CSS interactions, and modern frontend development.
 
-![Portfolio Preview](src/assets/images/about_me_bg.png)
+![Portfolio Preview](src/assets/images/portfolio_preview.png)
 
 ## ✨ Key Features
 - **Modern Minimalist Aesthetic**: A carefully curated "Classic Minimal" dark theme with sophisticated ivory typography.
