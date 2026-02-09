@@ -1,5 +1,7 @@
 # Mo Khalifa | Interior Design Portfolio
 
+**Live Site:** [mokhalifa.site](https://mokhalifa.site)
+
 A premium, high-fidelity interior design portfolio featuring contemporary aesthetics, sticky parallax stacking effects, and smooth animations. This project is a showcase of professional UI/UX design, advanced CSS interactions, and modern frontend development.
 
 ![Portfolio Preview](public/about_me_bg.png) *Note: Replace with a full mockup image for better presentation*
