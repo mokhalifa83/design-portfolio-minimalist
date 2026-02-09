@@ -1,0 +1,143 @@
+/* About Page Styles */
+
+/* Reset container to behave */
+.about-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    /* Very dark background */
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #FDFcF0;
+    /* Ivory text color */
+}
+
+/* Left Section: Typography */
+.about-left {
+    flex: 1;
+    /* Occupies left side */
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    /* Position from top */
+    padding-left: 5vw;
+}
+
+.about-title-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-word {
+    font-family: 'TheSeasonsBd', serif;
+    /* "About" - Bold - Normal */
+    font-size: clamp(4rem, 10vw, 10rem);
+    font-weight: normal;
+    margin: 0;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    padding-left: 0;
+}
+
+.me-word {
+    font-family: 'TheSeasonsBdIt', serif;
+    /* "me" - Bold - Italic */
+    font-size: clamp(4rem, 10vw, 10rem);
+    font-weight: normal;
+    font-style: italic;
+    /* Explicitly set italic style */
+    margin: 0;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    padding-left: 0.1em;
+    /* Slight indent often looks good for italics */
+}
+
+
+/* Right Section: Image and Content */
+.about-right {
+    flex: 2;
+    /* Occupies more space */
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 5vw 5vh 2vw;
+    /* Reduced left padding */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 100%;
+    height: 60%;
+    /* Takes up top portion */
+    border-radius: 40px;
+    /* Large rounded corners */
+    overflow: hidden;
+    margin-bottom: auto;
+    /* Push content to bottom */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.about-text-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-col {
+    flex: 1;
+}
+
+.about-col p {
+    font-family: 'TTCommons', sans-serif;
+    /* Requested text font */
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    color: #FDFcF0;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    /* Spacing between paragraphs */
+    margin-top: 0;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        height: auto;
+        overflow-y: auto;
+        padding-bottom: 40px;
+    }
+
+    .about-left {
+        padding: 40px;
+        flex: 0;
+    }
+
+    .about-right {
+        padding: 0 40px;
+        height: auto;
+    }
+
+    .image-container {
+        height: 60vh;
+        margin-bottom: 40px;
+    }
+
+    .about-text-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

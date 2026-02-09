@@ -1,0 +1,161 @@
+/* Contact Page Style - Final Refinements */
+
+.contact-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c0c0c;
+    color: #FDFcF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+    box-sizing: border-box;
+}
+
+.contact-content-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    height: 80vh;
+    gap: 80px;
+    align-items: flex-start;
+    /* Align everything to top of wrapper */
+    padding-top: 10vh;
+}
+
+/* Left Section: Typography perfectly aligned with image top */
+.contact-left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-one {
+    font-family: 'TheSeasonsBd', serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: none;
+    color: #FDFcF0;
+}
+
+.line-two {
+    font-family: 'TheSeasonsBdIt', serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    padding-left: 15px;
+}
+
+/* Right Section: Portrait and Info - Enlarged */
+.contact-right {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-image-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.contact-portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Contact Details - System font used to purge demo symbols */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vh 0;
+    border-bottom: 0.3px solid rgba(253, 252, 240, 0.15);
+    gap: 100px;
+}
+
+.contact-row:first-child {
+    border-top: 0.3px solid rgba(253, 252, 240, 0.15);
+}
+
+.contact-label {
+    font-family: 'TTCommons', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: rgba(253, 252, 240, 0.5);
+    font-weight: 300;
+    width: 80px;
+}
+
+.contact-value {
+    /* Using a standard system sans-serif to guarantee no "DEMO" symbols */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: clamp(1.1rem, 1.8vw, 1.75rem);
+    color: #FDFcF0;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    font-weight: 300;
+}
+
+.contact-value:hover {
+    opacity: 0.7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .contact-container {
+        height: auto;
+        padding: 50px 30px;
+    }
+
+    .contact-content-wrapper {
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+        padding-top: 20px;
+    }
+
+    .contact-left {
+        flex: none;
+    }
+
+    .contact-row {
+        gap: 40px;
+    }
+
+    .contact-label {
+        width: 60px;
+    }
+
+    .line-one,
+    .line-two {
+        font-size: 3.5rem;
+    }
+
+    .line-two {
+        padding-left: 0;
+    }
+}

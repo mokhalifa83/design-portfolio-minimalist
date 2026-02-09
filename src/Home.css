@@ -1,0 +1,96 @@
+/* Copying styles from App.css for Home specific styles */
+.home-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+h1.title {
+    font-family: 'TheSeasonsBdIt', serif;
+    font-size: clamp(4rem, 15vw, 12rem);
+    color: #FDFcF0;
+    margin: 0;
+    line-height: 1;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+h2.subtitle {
+    font-family: 'TheSeasonsBd', serif;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: #FDFcF0;
+    margin: 0 0 1rem 0;
+    font-weight: normal;
+}
+
+p.description {
+    font-family: 'TTCommons', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #FDFcF0;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 80%;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-container:hover {
+    transform: translateX(10px);
+}
+
+.arrow-icon {
+    width: clamp(40px, 8vw, 80px);
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 20px;
+    }
+
+    .content-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .arrow-container {
+        align-self: flex-end;
+    }
+}
