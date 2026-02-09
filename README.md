@@ -51,4 +51,4 @@ A premium, high-fidelity interior design portfolio featuring contemporary aesthe
 
 ---
 
-Designed and developed by **Mo Khalifa**.
+Designed and developed by **[Mo Khalifa](https://mokhalifa.site)**.
